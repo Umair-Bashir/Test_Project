@@ -61,12 +61,16 @@ def temp(x):
 temp(x)
 
 # Prefixes
-def prefixes(r):
+
+w = float(input('Enter your number: '))
+units = input('Enter the prefix: ')
+units = units.lower()
+def prefixes(w):
     if units == 'k' or units =='thousands'or units =='thousand':
-        z = r / 1000
+        z = w / 1000
         print(str(round(z,2))+'Million')
     elif  units == 'm' or units == 'million'or units =='millions':
-        z = r *1000
+        z = w *1000
         print(str(round(z,2))+'k')
     return z
-prefixes(r)
+prefixes(w)
