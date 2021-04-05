@@ -1,3 +1,5 @@
+python -m py_compile test.py
+
 # imperial to metric units
 x = float(input('enter your number: '))
 y= input('enter the units: ')
@@ -18,7 +20,7 @@ def imp_to_metr(x):
         res = x / 2.205
         print(str(res)+ 'kg')
 
-     elif
+     
     else:
         print('You have entered inconsistent units to convert')
     return y
